@@ -1,8 +1,8 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -61,7 +61,6 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
 }
 
 .hero img{
@@ -98,7 +97,6 @@ padding:80px 10%;
 
 h2{
 text-align:center;
-font-size:32px;
 margin-bottom:40px;
 }
 
@@ -114,29 +112,17 @@ line-height:1.8;
 
 /* SKILLS */
 
-.skills-grid{
+.skills{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:20px;
 }
 
 .skill{
 background:#1e293b;
 padding:20px;
-border-radius:8px;
-}
-
-.bar{
-background:#334155;
-height:10px;
-border-radius:5px;
-margin-top:8px;
-}
-
-.progress{
-height:10px;
-background:#3b82f6;
-border-radius:5px;
+border-radius:10px;
+text-align:center;
 }
 
 /* EXPERIENCE */
@@ -144,8 +130,8 @@ border-radius:5px;
 .exp{
 background:#1e293b;
 padding:25px;
-border-radius:8px;
-max-width:700px;
+border-radius:10px;
+max-width:800px;
 margin:auto;
 }
 
@@ -159,14 +145,14 @@ gap:25px;
 
 .project{
 background:#1e293b;
-padding:20px;
 border-radius:10px;
+padding:20px;
 transition:0.3s;
 }
 
 .project:hover{
-transform:translateY(-10px) scale(1.03);
-box-shadow:0px 10px 30px rgba(0,0,0,0.4);
+transform:translateY(-10px);
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
 }
 
 /* CONTACT */
@@ -188,7 +174,6 @@ footer{
 text-align:center;
 padding:20px;
 background:#020617;
-margin-top:50px;
 }
 
 </style>
@@ -196,8 +181,6 @@ margin-top:50px;
 </head>
 
 <body>
-
-<!-- NAVBAR -->
 
 <nav>
 
@@ -213,29 +196,17 @@ margin-top:50px;
 
 </nav>
 
-<!-- HERO -->
-
 <section class="hero">
 
 <h1>Ettedi Rahul Adithya Reddy</h1>
 
 <img src="profile.jpg">
 
-<p id="typing"></p>
-
-<div>
-
-<a href="#projects" class="btn">View Projects</a>
+<p>Technical Engineer Intern at Tech Mahindra | Python | Machine Learning | Backend Development</p>
 
 <a href="Rahul_Resume.pdf" class="btn">Download Resume</a>
 
-<a href="https://github.com/yourgithub" class="btn">GitHub</a>
-
-</div>
-
 </section>
-
-<!-- ABOUT -->
 
 <section id="about">
 
@@ -243,59 +214,47 @@ margin-top:50px;
 
 <p class="about">
 
-I am a Computer Science graduate and incoming Master's student in Computer and Information Sciences.
-Currently working as a Technical Engineer Intern at Tech Mahindra supporting enterprise banking applications.
+Computer Science graduate and incoming Master’s student in Computer and Information Sciences with strong interest in Data Science, Machine Learning, and Backend Development.
 
-I have strong skills in Python, Machine Learning, Data Analysis, and Backend Development.
-I enjoy building intelligent systems and solving real-world problems using data and technology.
+I currently work as a Technical Engineer Intern at Tech Mahindra supporting enterprise banking applications in the Europe BFSI unit. My responsibilities include monitoring production systems, handling incident management, performing data validation, and assisting in troubleshooting application issues.
+
+I have hands-on experience developing web applications and machine learning models using Python, Django, and data analysis tools such as Pandas and NumPy. Through my academic projects, I have built systems that solve real-world problems such as e-commerce platforms and food wastage reduction systems.
+
+I am passionate about applying data-driven techniques and software development skills to build intelligent systems and scalable applications. I am particularly interested in machine learning, data mining, and backend development.
 
 </p>
 
 </section>
 
-<!-- SKILLS -->
-
 <section id="skills">
 
 <h2>Skills</h2>
 
-<div class="skills-grid">
+<div class="skills">
 
-<div class="skill">
-Python
-<div class="bar"><div class="progress" style="width:90%"></div></div>
-</div>
-
-<div class="skill">
-Machine Learning
-<div class="bar"><div class="progress" style="width:80%"></div></div>
-</div>
-
-<div class="skill">
-Django
-<div class="bar"><div class="progress" style="width:75%"></div></div>
-</div>
-
-<div class="skill">
-SQL
-<div class="bar"><div class="progress" style="width:85%"></div></div>
-</div>
-
-<div class="skill">
-JavaScript
-<div class="bar"><div class="progress" style="width:70%"></div></div>
-</div>
-
-<div class="skill">
-Data Analysis
-<div class="bar"><div class="progress" style="width:80%"></div></div>
-</div>
+<div class="skill">Python</div>
+<div class="skill">Java</div>
+<div class="skill">SQL</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Machine Learning</div>
+<div class="skill">Data Analysis</div>
+<div class="skill">Data Cleaning</div>
+<div class="skill">Predictive Modeling</div>
+<div class="skill">Pandas</div>
+<div class="skill">NumPy</div>
+<div class="skill">Scikit-learn</div>
+<div class="skill">Django</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">REST APIs</div>
+<div class="skill">Git</div>
+<div class="skill">GitHub</div>
+<div class="skill">VS Code</div>
+<div class="skill">MySQL</div>
 
 </div>
 
 </section>
-
-<!-- EXPERIENCE -->
 
 <section id="experience">
 
@@ -305,19 +264,25 @@ Data Analysis
 
 <h3>Technical Engineer Intern — Tech Mahindra</h3>
 
-<p>
+<ul>
 
-Supporting enterprise banking applications in the Europe BFSI unit.
-Worked on production monitoring, incident management, data validation,
-and troubleshooting system issues.
+<li>Supported enterprise banking applications in the Europe BFSI unit.</li>
 
-</p>
+<li>Monitored production systems and assisted in incident management.</li>
+
+<li>Performed data validation and analysis to ensure accuracy of system data.</li>
+
+<li>Investigated and resolved application issues reported by users.</li>
+
+<li>Collaborated with development and support teams to troubleshoot system problems.</li>
+
+<li>Assisted in maintaining system performance and operational stability.</li>
+
+</ul>
 
 </div>
 
 </section>
-
-<!-- PROJECTS -->
 
 <section id="projects">
 
@@ -327,16 +292,15 @@ and troubleshooting system issues.
 
 <div class="project">
 
-<h3>Web Cart – Online Shopping System</h3>
+<h3>Web Cart: Navigating the Future of Online Shopping</h3>
 
 <p>
 
-Developed an e-commerce web application that allows users to browse products,
-add items to cart, and manage orders.
+Developed an e-commerce web application that allows users to browse products, add items to a shopping cart, and manage purchases.
 
 </p>
 
-<a href="https://github.com/yourgithub/webcart" class="btn">View Code</a>
+<p><b>Technologies:</b> HTML, CSS, JavaScript</p>
 
 </div>
 
@@ -346,12 +310,11 @@ add items to cart, and manage orders.
 
 <p>
 
-A platform connecting restaurants and organizations to redistribute excess food
-and reduce food wastage.
+Developed a system designed to reduce food wastage by connecting restaurants and food providers with organizations and individuals in need.
 
 </p>
 
-<a href="https://github.com/yourgithub/food-waste-system" class="btn">View Code</a>
+<p><b>Technologies:</b> Python, Web Technologies, Database Management</p>
 
 </div>
 
@@ -361,12 +324,11 @@ and reduce food wastage.
 
 <p>
 
-Built predictive models using Python, Pandas, NumPy and Scikit-learn
-for classification and regression.
+Developed machine learning models to analyze datasets and predict outcomes using classification and regression techniques.
 
 </p>
 
-<a href="https://github.com/yourgithub/ml-models" class="btn">View Code</a>
+<p><b>Technologies:</b> Python, Pandas, NumPy, Scikit-learn</p>
 
 </div>
 
@@ -374,19 +336,19 @@ for classification and regression.
 
 </section>
 
-<!-- CONTACT -->
-
 <section id="contact">
 
 <h2>Contact</h2>
 
 <div class="contact">
 
-<a href="#">Email: ettedirahulreddy1@gmail.com</a>
+<a>Email: ettedirahulreddy1@gmail.com</a>
 
-<a href="#">LinkedIn: www.linkedin.com/in/rahuladithyareddy</a>
+<a>LinkedIn: www.linkedin.com/in/rahuladithyareddy</a>
 
-<a href="#">GitHub: https://github.com/Rahulreddy6222/</a>
+<a>GitHub: github.com/Rahulreddy6222</a>
+
+<a>Portfolio: rahulreddy6222.github.io</a>
 
 </div>
 
@@ -398,24 +360,6 @@ for classification and regression.
 
 </footer>
 
-<script>
-
-const text="Python Developer | Machine Learning | Backend Development";
-
-let i=0;
-
-function typing(){
-if(i<text.length){
-document.getElementById("typing").innerHTML+=text.charAt(i);
-i++;
-setTimeout(typing,80);
-}
-}
-
-typing();
-
-</script>
-
 </body>
+
 </html>
-```
