@@ -155,32 +155,6 @@ transform:translateY(-10px);
 box-shadow:0 10px 25px rgba(0,0,0,0.4);
 }
 
-/* CONTACT */
-
-.contact{
-text-align:center;
-}
-
-.contact a{
-display:block;
-margin:10px;
-color:#3b82f6;
-text-decoration:none;
-}
-
-/* FOOTER */
-
-footer{
-text-align:center;
-padding:20px;
-background:#020617;
-}
-footer{
-text-align:center;
-padding:20px;
-background:#020617;
-}
-
 /* CONTACT SECTION */
 
 .contact-container{
@@ -226,7 +200,14 @@ color:#3b82f6;
 font-size:30px;
 }
 
-</style>
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+}
+
 </style>
 
 </head>
@@ -253,7 +234,7 @@ font-size:30px;
 
 <img src="profile.jpg">
 
-<p>Technical Engineer Intern at Tech Mahindra | Python | Machine Learning | Backend Development</p>
+<p id="typing"></p>
 
 <a href="Rahul_Resume.pdf" class="btn">Download Resume</a>
 
@@ -269,9 +250,9 @@ Computer Science graduate and incoming Master’s student in Computer and Inform
 
 I currently work as a Technical Engineer Intern at Tech Mahindra supporting enterprise banking applications in the Europe BFSI unit. My responsibilities include monitoring production systems, handling incident management, performing data validation, and assisting in troubleshooting application issues.
 
-I have hands-on experience developing web applications and machine learning models using Python, Django, and data analysis tools such as Pandas and NumPy. Through my academic projects, I have built systems that solve real-world problems such as e-commerce platforms and food wastage reduction systems.
+I have hands-on experience developing web applications and machine learning models using Python, Django, and data analysis tools such as Pandas and NumPy.
 
-I am passionate about applying data-driven techniques and software development skills to build intelligent systems and scalable applications. I am particularly interested in machine learning, data mining, and backend development.
+I am passionate about building intelligent systems and scalable applications using modern technologies.
 
 </p>
 
@@ -289,8 +270,6 @@ I am passionate about applying data-driven techniques and software development s
 <div class="skill">JavaScript</div>
 <div class="skill">Machine Learning</div>
 <div class="skill">Data Analysis</div>
-<div class="skill">Data Cleaning</div>
-<div class="skill">Predictive Modeling</div>
 <div class="skill">Pandas</div>
 <div class="skill">NumPy</div>
 <div class="skill">Scikit-learn</div>
@@ -300,7 +279,6 @@ I am passionate about applying data-driven techniques and software development s
 <div class="skill">REST APIs</div>
 <div class="skill">Git</div>
 <div class="skill">GitHub</div>
-<div class="skill">VS Code</div>
 <div class="skill">MySQL</div>
 
 </div>
@@ -325,9 +303,9 @@ I am passionate about applying data-driven techniques and software development s
 
 <li>Investigated and resolved application issues reported by users.</li>
 
-<li>Collaborated with development and support teams to troubleshoot system problems.</li>
+<li>Collaborated with development teams to troubleshoot system problems.</li>
 
-<li>Assisted in maintaining system performance and operational stability.</li>
+<li>Maintained operational stability of enterprise systems.</li>
 
 </ul>
 
@@ -346,12 +324,14 @@ I am passionate about applying data-driven techniques and software development s
 <h3>Web Cart: Navigating the Future of Online Shopping</h3>
 
 <p>
-
 Developed an e-commerce web application that allows users to browse products, add items to a shopping cart, and manage purchases.
-
 </p>
 
 <p><b>Technologies:</b> HTML, CSS, JavaScript</p>
+
+<a href="https://github.com/Rahulreddy6222" class="btn" target="_blank">
+View Code
+</a>
 
 </div>
 
@@ -360,12 +340,14 @@ Developed an e-commerce web application that allows users to browse products, ad
 <h3>Food Wastage Reduction Management System</h3>
 
 <p>
-
-Developed a system designed to reduce food wastage by connecting restaurants and food providers with organizations and individuals in need.
-
+Developed a platform to reduce food wastage by connecting restaurants with people in need.
 </p>
 
-<p><b>Technologies:</b> Python, Web Technologies, Database Management</p>
+<p><b>Technologies:</b> Python, Web Technologies</p>
+
+<a href="https://github.com/Rahulreddy6222" class="btn" target="_blank">
+View Code
+</a>
 
 </div>
 
@@ -374,12 +356,14 @@ Developed a system designed to reduce food wastage by connecting restaurants and
 <h3>Machine Learning Prediction Models</h3>
 
 <p>
-
-Developed machine learning models to analyze datasets and predict outcomes using classification and regression techniques.
-
+Built machine learning models to analyze datasets and perform predictive analysis.
 </p>
 
 <p><b>Technologies:</b> Python, Pandas, NumPy, Scikit-learn</p>
+
+<a href="https://github.com/Rahulreddy6222" class="btn" target="_blank">
+View Code
+</a>
 
 </div>
 
@@ -423,21 +407,9 @@ github.com/Rahulreddy6222
 </p>
 </div>
 
-<div class="contact-card">
-<span class="icon">🌐</span>
-<h3>Portfolio</h3>
-<p>
-<a href="https://rahulreddy6222.github.io" target="_blank">
-rahulreddy6222.github.io
-</a>
-</p>
-</div>
-
 </div>
 
 </section>
-
-
 
 <footer>
 
@@ -445,6 +417,25 @@ rahulreddy6222.github.io
 
 </footer>
 
+<script>
+
+const text = "Technical Engineer Intern | Python | Machine Learning | Backend Development";
+
+let i = 0;
+
+function typing(){
+if(i < text.length){
+document.getElementById("typing").innerHTML += text.charAt(i);
+i++;
+setTimeout(typing, 80);
+}
+}
+
+typing();
+
+</script>
+
 </body>
 
 </html>
+
