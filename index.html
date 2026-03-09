@@ -175,7 +175,58 @@ text-align:center;
 padding:20px;
 background:#020617;
 }
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+}
 
+/* CONTACT SECTION */
+
+.contact-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+max-width:900px;
+margin:auto;
+}
+
+.contact-card{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+text-align:center;
+transition:0.3s;
+}
+
+.contact-card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.contact-card h3{
+margin:10px 0;
+color:#3b82f6;
+}
+
+.contact-card p{
+color:#cbd5f5;
+}
+
+.contact-card a{
+color:#cbd5f5;
+text-decoration:none;
+}
+
+.contact-card a:hover{
+color:#3b82f6;
+}
+
+.icon{
+font-size:30px;
+}
+
+</style>
 </style>
 
 </head>
@@ -338,21 +389,55 @@ Developed machine learning models to analyze datasets and predict outcomes using
 
 <section id="contact">
 
-<h2>Contact</h2>
+<h2>Contact Me</h2>
 
-<div class="contact">
+<div class="contact-container">
 
-<a>Email: ettedirahulreddy1@gmail.com</a>
+<div class="contact-card">
+<span class="icon">📧</span>
+<h3>Email</h3>
+<p>
+<a href="mailto:rahuladithya@email.com">
+rahuladithya@email.com
+</a>
+</p>
+</div>
 
-<a>LinkedIn: www.linkedin.com/in/rahuladithyareddy</a>
+<div class="contact-card">
+<span class="icon">💼</span>
+<h3>LinkedIn</h3>
+<p>
+<a href="https://linkedin.com/in/yourprofile" target="_blank">
+linkedin.com/in/yourprofile
+</a>
+</p>
+</div>
 
-<a>GitHub: github.com/Rahulreddy6222</a>
+<div class="contact-card">
+<span class="icon">💻</span>
+<h3>GitHub</h3>
+<p>
+<a href="https://github.com/Rahulreddy6222" target="_blank">
+github.com/Rahulreddy6222
+</a>
+</p>
+</div>
 
-<a>Portfolio: rahulreddy6222.github.io</a>
+<div class="contact-card">
+<span class="icon">🌐</span>
+<h3>Portfolio</h3>
+<p>
+<a href="https://rahulreddy6222.github.io" target="_blank">
+rahulreddy6222.github.io
+</a>
+</p>
+</div>
 
 </div>
 
 </section>
+
+
 
 <footer>
 
